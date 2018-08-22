@@ -10,8 +10,8 @@ int T1;
 
 void setup() {
   Serial.begin(9600);
-  myservo1.attach(18);  // attaches the servo on pin A4 to the servo object
-  myservo2.attach(17);  // attaches the servo on pin A3 to the servo object
+  myservo1.attach(18);  // attaches the servo1 on pin A4 to the servo object
+  myservo2.attach(17);  // attaches the servo2 on pin A3 to the servo object
   myservo1.write(170);
   myservo2.write(90);
   delay(1000);
