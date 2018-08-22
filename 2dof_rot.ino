@@ -1,18 +1,17 @@
 #include <Servo.h>
 
-Servo myservo1;  // create servo object to control a servo
+Servo myservo1;  // create servo object to control servo1 & servo2
 Servo myservo2;
-// twelve servo objects can be created on most boards
 
-int pos = 0;    // variable to store the servo position
+
 int theta1;
 int theta2;
 int T1;
 
 void setup() {
   Serial.begin(9600);
-  myservo1.attach(18);  // attaches the servo on pin 9 to the servo object
-  myservo2.attach(17);
+  myservo1.attach(18);  // attaches the servo on pin A4 to the servo object
+  myservo2.attach(17);  // attaches the servo on pin A3 to the servo object
   myservo1.write(170);
   myservo2.write(90);
   delay(1000);
